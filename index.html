@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="Score">
+            <h2 class="title">Score</h2>
+            <h1 class="Score_number" id="score">0</h1>
+        </div>
+    </header>
+
+    <section class="Game">
+        <div class="Game_area ">
+            <div class="game__option game__option--paper" id="paper" data-user="paper">
+                <img src="images/icon-paper.svg" alt="image_paper">
+            </div>
+            <div class="game__option game__option--rock" id="rock" data-user="rock">
+                <img src="images/icon-rock.svg" alt="image_rock">
+            </div>
+            <div class="game__option game__option--scissors" id="scissors" data-user="scissors">
+                <img src="images/icon-scissors.svg" alt="image_scissors">
+            </div>
+        </div>
+    </section>
+
+    <button class="rules" id="rules_btn">Rules</button>
+
+    <div class="Overlay" id="Overlay"> </div>
+
+        <article class="Card_rule" id="rulecard">
+            <div class="rule-card">
+                <h2 class="Rule_title">Rules</h2>
+                <img src="images/icon-close.svg" alt="Close" id="Closebtn">
+            </div>
+            <div class="image_help">
+                <img src="images/image-rules.svg" alt="image_help">
+            </div>
+        </article>
+   
+
+    
+    <script src="script.js"></script>
+    <script src="Overlay.js"></script>
+</body>
+</html>

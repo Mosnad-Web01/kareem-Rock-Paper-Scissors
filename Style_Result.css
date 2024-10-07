@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 20px 50px;
+  min-height: 100vh;
+  font-family: sans-serif;
+  position: relative;
+}
+
+header {
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.logo_header {
+  width: 120px;
+}
+
+.logo_header img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.Score_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 100px;
+  height: 80px;
+}
+
+.Score_title {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+  color: hsl(229, 64%, 46%);
+}
+
+.Score_numbers {
+  font-weight: 800;
+  color: hsl(229, 25%, 31%);
+  font-size: 2.4rem;
+}
+
+.Rule_btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.759);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.Rule_btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Rule_card {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.card-rule{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-rule img {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.image_help {
+  margin-top: 20px;
+}
+
+.image_help img {
+  object-fit: contain;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  display: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 100px;
+  padding: 20px;
+  gap: 30px;
+}
+
+.User_Game,
+.Computer_Game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.User_Game h3,
+.Computer_Game h3 {
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  top: -50px;
+}
+
+#User_container,
+#computer_container {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: inset 1px 7px 2px rgb(186, 186, 186);
+}
+
+
+.Game_result {
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+.Result_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 20px;
+}
+
+
+.Play_again_btn {
+  padding: 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: rgb(252, 0, 0);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.game__option--paper {
+    border: 15px solid rgb(67, 67, 255);
+  }
+  
+  .game__option--rock {
+    border: 15px solid rgb(255, 73, 73);
+  }
+  
+  .game__option--scissors {
+    border: 15px solid rgb(255, 190, 70);
+  }
+
+@media (max-width: 694px) {
+  body {
+    padding: 10px 20px;
+  }
+
+  .logo_header {
+    width: 80px;
+  }
+
+  .Score_header {
+    width: 80px;
+    height: 60px;
+  }
+
+  .Score_title {
+    font-size: 0.5rem;
+    letter-spacing: 1.4px;
+  }
+
+  .Score_numbers {
+    font-size: 2rem;
+  }
+
+  .Rule_btn {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    letter-spacing: 1.5px;
+    position: absolute;
+  }
+
+  #User_containe,
+#computer_containe {
+    width: 120px;
+    height: 120px;
+  }
+
+  .Result_container {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 533px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .User_Game h3{
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    top: -15px;
+  }
+  .Computer_Game {
+    flex-direction: column-reverse;
+  }
+
+  .Computer_Game h3 {
+    position: relative;
+    top: 20px;
+  }
+
+  .Result_container {
+    margin: 15px 0px;
+  }
+}

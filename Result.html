@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style_Result.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <img src="images/logo.svg" alt="">
+        </div>
+        <div class="Score_header">
+            <h2 class="Score_title">Score</h2>
+            <h1 id="Score_res" class="Score_numbers">0</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="User_container" class="User_Game">
+            <h3>You Picked</h3>
+            <div id="usercontainer">
+
+            </div>
+        </div>
+
+        <div class="Result_container">
+            <h1 id="Who_Winer" class="Game_result"></h1>
+            <button id="Play_again" class="Play_again_btn">Play Again</button>
+        </div>
+
+        <div id="computer_container" class="Computer_Game">
+            <h3>The House Piched</h3>
+            <div id="computercontainer">
+
+            </div>
+        </div>
+    </div>
+
+    <button class="Rule_btn" id="rules_btn">Rules</button>
+    <div class="Overlay" id="Overlay"></div>
+
+    <article class="Rule_card" id="rulecard">
+        <div class="card-rule">
+            <h2 class="card_title">Rules</h2>
+            <img src="images/icon-close.svg" alt="close" id="Close_btn">
+        </div>
+        <div class="image_help">
+            <img src="images/image-rules.svg" alt="">
+        </div>
+    </article>
+
+    <script src="Result.js"></script>
+    <script src="script.js"></script>
+    <script src="Overlay.js"></script>
+</body>
+</html>
